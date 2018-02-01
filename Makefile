@@ -14,7 +14,7 @@ install:
 	@echo 'Installing binaries...'
 	@sed "s|CONFDIR|$(SYSCONFDIR)/stock-shares|g" < stock-shares > $(DESTDIR)$(PREFIX)/bin/stock-shares
 	@chmod 755 $(DESTDIR)$(PREFIX)/bin/stock-shares
-	@sed "s|CONFDIR|$(SYSCONFDIR)/stock-shares-multiple.py|g" < stock-shares-multiple.py > $(DESTDIR)$(PREFIX)/bin/main-multiple.py
+	@sed "s|CONFDIR|$(SYSCONFDIR)/stock-shares-multiple.py|g" < stock-shares-multiple.py > $(DESTDIR)$(PREFIX)/bin/stock-shares-multiple.py
 	@chmod 755 $(DESTDIR)$(PREFIX)/bin/stock-shares-multiple.py
 
 	@echo 'installed stock-shares'
